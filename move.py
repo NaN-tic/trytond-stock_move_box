@@ -10,10 +10,9 @@ __metaclass__ = PoolMeta
 
 class Move:
     __name__ = 'stock.move'
-    box = fields.Integer('Box')
+    box = fields.Char('Box')
 
     @classmethod
     def __setup__(cls):
         super(Move, cls).__setup__()
-        cls._order.insert(0, ('box', 'ASC'))
-
+        cls._order.insert(1, ('box', 'ASC'))
