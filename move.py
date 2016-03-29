@@ -5,10 +5,10 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 
 __all__ = ['Move']
-__metaclass__ = PoolMeta
 
 
 class Move:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.move'
     box = fields.Char('Box')
 
